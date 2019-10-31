@@ -66,91 +66,112 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container{
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 	margin-top: 2%;
 }
 
-/*navigation*/
+/* Navigation */
+
 nav{
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-
 nav a{
 	text-decoration:none;
-	color: grey;
+    color: grey;
+    width: 35%
+}
+.logo {
+    position:absolute;
+    top: 8px;
+    right: 10%;
+}
+.services-header-img {
+    margin-top:2%;
+    margin-bottom:4%;
+    width: 100%;
 }
 
+/* Services box */
 
-.header{
-	margin-top: 5%;
-	margin-bottom: 5%;
-	display: flex;
-	justify-content: space-evenly;
-	text-align: center;
-	align-items: center;
+h1 {
+    font-size: 30px;
+}
+.services {
+    margin-bottom: 4%;
+}
+.services > p {
+    font-size:15px;
+    line-height: 20px;
 }
 
-.logo-and-button {
-	display: flex;
-	flex-direction: column;
-}
+/*Boxes*/
 
-h1{
-	font-size: 75px;
-	text-align: center;
-}
+.row-one {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:4%;
+    margin-top: 4%;
 
-#button{
-	margin: 0 auto;
-	padding:3% 0 5% 0;
+}
+.row-two {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:4%;
+}
+.row-three {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:4%;
+}
+.box {
+    line-height: 20px;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    font-size:15px;
+    border: 1px solid black;
+    width: 48%;
+}
+.button {
+	padding:1.5% 0 5% 0;
 	height: 35px;
-	width: 130px;
-	border: 1px solid grey;
-	text-align: center;
+	width: 150px;
+	border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    background-color: white;
 }
 
+/*Last row*/
 
-.middle-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 87%;
+.bottom-row {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 15%;
+    margin-top: 4%;
 }
-
-.sectionclass1 {
-	display: flex;
-	justify-content: space-between;
+.left-box {
+    width: 48%;
+    font-size:15px;
+    line-height:20px;
 }
-
-.div1{
-	width: 45%;
-	margin: 5% 1.5%;
-	padding:0 5%;
-	font-size: 15px;
+h3 {
+    font-size: 20px;
 }
-
-.sectionclass2{
-	display: flex;
-	justify-content: space-between;
+ul {
+    margin-left: 4%;
 }
-
-.div2{
-	width: 35%;
-	margin: 5% 0 5% 1.5%;
-	padding: 0 5%;
-	font-size: 15px;
+.right-box {
+    width: 48%;
 }
-
-.contact{
-	height: 100px;
-	width: 100px;
-	margin: 5% 0 0 6.5%;
-}
-
 footer{
-	margin-top: 10%;
-	margin-bottom: 10%;
-	text-align: center;
+    position: relative;
+    bottom: 15px;
+    left: 45%;
 }
